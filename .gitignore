@@ -1,3 +1,4 @@
 *.DS_Store
-*static/.sass-cache
+.sass-cache
 *node_modules
+config.rb
