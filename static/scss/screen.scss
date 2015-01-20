@@ -1,0 +1,201 @@
+@import 'base';
+
+
+// Universal Styles 
+// - - - - - - - - - - - - - - - - - - - - - - 
+body {
+  @include font-smoothing;
+  background: $ltgray;
+  color: $medgray;
+  font-family: $body-font;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
+.container {
+  background: $white;
+  box-shadow: 0 0 5px rgba(#000, .1);
+  margin: 0 auto;
+  width: 1182px;
+}
+
+section {
+  padding: 80px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $header-font;
+  line-height: 1.2em;
+}
+
+h1 {
+  color: $white;
+  font-size: 7.5em;
+}
+
+h2 {
+  color: $dkgray;
+  font-size: 2.5em;
+}
+
+h3 {
+  color: $medgray;
+  font-size: 1.6em;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 20px;
+}
+
+a {
+  color: $white;
+}
+
+
+
+// Hero Styles 
+// - - - - - - - - - - - - - - - - - - - - - - 
+.hero {
+  background: url('../css/images/hero_bg.jpg') top center fixed no-repeat;
+  height: 750px;
+  padding: 0;
+  position: relative;
+
+  div {
+    background: url('../css/images/hero_border_bg.png') bottom no-repeat;
+    height: 244px;
+    margin: 0 auto;
+    padding-top: 215px;
+    position: relative;
+    text-align: center;
+    width: 1020px;
+  }
+
+  h1 {
+    margin-top: 35px;
+  }
+
+  h2 { 
+    color: $yellow;
+    font-size: 1.25em;
+    margin-top: 11px;
+  }
+}
+
+nav {
+  background: rgba($teal, .8);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+
+  ul {
+    @include clearfix;
+    margin: 0 auto;
+    width: 61%;
+
+    li {
+      float: left;
+
+      a {
+        border-top: 3px solid transparent;
+        color: $white;
+        display: block;
+        font-family: $header-font;
+        font-size: 1.25em;
+        height: 72px;
+        line-height: 72px;
+        padding: 0 15px;
+        text-decoration: none;
+
+        &:hover,
+        &:active,
+        &.active {
+          border-top: 3px solid $white;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// Plan Styles 
+// - - - - - - - - - - - - - - - - - - - - - - 
+#plan {
+  @include clearfix;
+
+  article {
+    float: left;
+    width: 505px;
+  }
+
+  img {
+    float: right;
+    margin: 70px 0 0;
+    width: 460px;
+  }
+}
+
+
+
+
+// Map Styles 
+// - - - - - - - - - - - - - - - - - - - - - - 
+#map {
+  @include clearfix;
+  color: $white;
+  padding: 0;
+
+  article {
+    background: $teal;
+    float: left;
+    height: 820px;
+    padding: 30px;
+    width: 340px;
+
+    h2 {
+      color: $white;
+    }
+  }
+
+  aside {
+    float: right;
+    position: relative;
+    width: 782px;
+
+    iframe {
+      display: block;
+    }
+
+    &:before {
+      background: transparent;
+      bottom: 0;
+      content: '';
+      height: 780px;
+      position: absolute;
+      right: 0;
+      width: 782px;
+    }
+  }
+}
+
+
+
+// Info Styles 
+// - - - - - - - - - - - - - - - - - - - - - - 
+#info {
+  background: url('../css/images/info_bg.jpg') top center no-repeat;
+
+  article {
+    column-count: 2;
+    column-gap: 60px;
+  }
+}
+
+
+

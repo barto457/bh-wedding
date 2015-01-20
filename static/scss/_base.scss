@@ -1,0 +1,47 @@
+@import 'reset';
+
+
+// Colors
+// - - - - - - - - - - - - - - - - - - - - - - 
+$ltgray: #d5d5d5;
+$medgray: #7d7d7d;
+$dkgray: #181818;
+
+$white: #fdfdf9;
+
+$yellow: #e9eec9;
+
+$teal: #53bfa5;
+
+
+
+// Typefaces
+// - - - - - - - - - - - - - - - - - - - - - - 
+$header-font: "hwt-artz", Helvetica, sans-serif;
+$body-font: "freight-sans-pro", Helvetica, sans-serif;
+
+
+
+// Font Smoothing
+// - - - - - - - - - - - - - - - - - - - - - - 
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  } @else {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+
+
+// Clearfix
+// - - - - - - - - - - - - - - - - - - - - - - 
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
