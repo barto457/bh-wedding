@@ -133,6 +133,8 @@ nav {
 #plan article {
   float: left;
   width: 505px; }
+#plan a {
+  color: #53bfa5; }
 #plan img {
   float: right;
   margin: 70px 0 0;
@@ -148,7 +150,7 @@ nav {
   #map article {
     background: #53bfa5;
     float: left;
-    height: 820px;
+    height: 890px;
     padding: 30px;
     width: 340px; }
     #map article h2 {
@@ -161,9 +163,9 @@ nav {
       display: block; }
     #map aside:before {
       background: transparent;
-      bottom: 0;
+      bottom: 60px;
       content: '';
-      height: 780px;
+      height: 720px;
       position: absolute;
       right: 0;
       width: 782px; }
@@ -177,5 +179,24 @@ nav {
     -webkit-column-gap: 60px;
        -moz-column-gap: 60px;
             column-gap: 60px; }
+  #info h3 {
+    color: #181818; }
+
+#rsvp {
+  padding: 80px 80px 20px; }
+  #rsvp:after {
+    clear: both;
+    content: '';
+    display: table; }
+  #rsvp article {
+    float: left;
+    margin-right: 140px;
+    width: 500px; }
+  #rsvp aside {
+    float: right;
+    margin-top: 80px;
+    width: 380px; }
+  #rsvp div#wuf-adv {
+    display: none !important; }
 
 /*# sourceMappingURL=screen.css.map */

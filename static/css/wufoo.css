@@ -1,4 +1,94 @@
+#container, html.embed {
+  background: transparent;
+  width: 500px; }
+
+#container {
+  margin: 0; }
+
+.wufoo .info, .wufoo .paging-context {
+  border-bottom: 1px solid #f0f0ec;
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding-bottom: 20px; }
+
 .wufoo .info h2 {
-  color: #f00; }
+  font-family: "hwt-artz", Helvetica, sans-serif;
+  margin: 0; }
+
+.noI form li, .altInstruct form li {
+  margin-bottom: 8px; }
+  .noI form li:after, .altInstruct form li:after {
+    clear: both;
+    content: '';
+    display: table; }
+
+.wufoo label.desc, .wufoo legend.desc {
+  color: #7d7d7d;
+  float: left;
+  font-size: 18px;
+  width: 160px; }
+
+.wufoo label.choice {
+  font-size: 16px; }
+
+.wufoo input.text,
+.wufoo textarea.textarea,
+.wufoo input.file,
+.wufoo select.select {
+  background: #fff;
+  border: 1px solid #7d7d7d;
+  border-radius: 5px;
+  float: right;
+  font-size: 16px !important;
+  height: 45px;
+  padding: 0 10px;
+  width: 270px; }
+
+.wufoo select.select {
+  width: 290px; }
+
+form li div {
+  float: right;
+  width: 290px; }
+
+.wufoo li.focused {
+  background: rgba(83, 191, 165, 0.2); }
+
+input.medium, select.medium {
+  width: 100%; }
+
+form span.req {
+  color: #53bfa5 !important; }
+
+form li.buttons input {
+  background: #53bfa5;
+  border: 0;
+  color: #fdfdf9;
+  cursor: pointer;
+  font-size: 18px !important;
+  height: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 290px; }
+  form li.buttons input:hover {
+    background: #e9eec9;
+    color: #53bfa5; }
+
+.likert caption, .likert thead td, .likert tbody th label {
+  color: #7d7d7d; }
+
+.wufoo .section h3,
+form li.section h3,
+.wufoo .section h3,
+.wufoo .captcha,
+#payment .paging-context {
+  color: #333;
+  font-size: 200%;
+  border-top: 1px solid #f0f0ec; }
+
+.wufoo div#instruct312 {
+  color: #7d7d7d;
+  font-size: 120%; }
 
 /*# sourceMappingURL=wufoo.css.map */

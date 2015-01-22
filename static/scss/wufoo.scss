@@ -1,3 +1,113 @@
-.wufoo .info h2 {
-  color: #f00;
+@import 'base';
+
+#container, html.embed {
+  background: transparent;
+  width: 500px;
 }
+
+#container {
+  margin: 0;
+}
+
+.wufoo .info, .wufoo .paging-context {
+  border-bottom: 1px solid #f0f0ec;
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.wufoo .info h2 {
+  font-family: $header-font;
+  margin: 0;
+}
+
+.noI form li, .altInstruct form li {
+  @include clearfix;
+  margin-bottom: 8px;
+}
+
+.wufoo label.desc, .wufoo legend.desc {
+  color: #7d7d7d;
+  float: left;
+  font-size: 18px;
+  width: 160px;
+}
+
+.wufoo label.choice {
+  font-size: 16px;
+}
+
+.wufoo input.text, 
+.wufoo textarea.textarea, 
+.wufoo input.file,
+.wufoo select.select {
+  background: #fff;
+  border: 1px solid #7d7d7d;
+  border-radius: 5px;
+  float: right;
+  font-size: 16px !important;
+  height: 45px;
+  padding: 0 10px;
+  width: 270px;
+}
+
+.wufoo select.select {
+  width: 290px;
+}
+
+form li div {
+  float: right;
+  width: 290px;
+}
+
+.wufoo li.focused {
+  background: rgba($teal, .2)
+}
+
+input.medium, select.medium {
+  width: 100%;
+}
+
+form span.req {
+  color: $teal !important;
+}
+
+form li.buttons input {
+  background: $teal;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  font-size: 18px !important;
+  height: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 290px;
+
+  &:hover {
+    background: $yellow;
+    color: $teal;
+  }
+}
+
+
+.likert caption, .likert thead td, .likert tbody th label {
+  color: $medgray;
+}
+
+.wufoo .section h3,
+form li.section h3,
+.wufoo .section h3, 
+.wufoo .captcha, 
+#payment .paging-context {
+  color: #333;
+  font-size: 200%;
+  border-top: 1px solid #f0f0ec;
+}
+
+.wufoo div#instruct312 {
+  color: $medgray;
+  font-size: 120%;
+}
+
+

@@ -1,3 +1,4 @@
+@import 'reset';
 @import 'base';
 
 
@@ -134,6 +135,10 @@ nav {
     width: 505px;
   }
 
+  a {
+    color: $teal;
+  }
+
   img {
     float: right;
     margin: 70px 0 0;
@@ -154,7 +159,7 @@ nav {
   article {
     background: $teal;
     float: left;
-    height: 820px;
+    height: 890px;
     padding: 30px;
     width: 340px;
 
@@ -174,9 +179,9 @@ nav {
 
     &:before {
       background: transparent;
-      bottom: 0;
+      bottom: 60px;
       content: '';
-      height: 780px;
+      height: 720px;
       position: absolute;
       right: 0;
       width: 782px;
@@ -194,6 +199,35 @@ nav {
   article {
     column-count: 2;
     column-gap: 60px;
+  }
+
+  h3 {
+    color: $dkgray;
+  }
+}
+
+
+
+// RSVP Styles 
+// - - - - - - - - - - - - - - - - - - - - - - 
+#rsvp {
+  @include clearfix;
+  padding: 80px 80px 20px;
+
+  article {
+    float: left;
+    margin-right: 140px;
+    width: 500px;
+  }
+
+  aside {
+    float: right;
+    margin-top: 80px;
+    width: 380px;
+  }
+
+  div#wuf-adv {
+    display: none !important;
   }
 }
 
